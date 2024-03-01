@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this is my head-->    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--this is my body-->
+<body>
+<!--this is my header-->    
+<header>
+  <div class="banner">
+    <div class="navbar">
+
+          <h1>KFC</h1>
+      
+          <nav>
+                 <ul>
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                   </ul>
+             </nav>
+   </div>
+  </div>
+  <div class="content">
+    <h1>finger likins good</h1>
+  </div>
+ </header>
+    <br><br>
+    
+ <!--this is my main-->   
+    <main>
+      
+  <!--chat bot-->
+  <script>
+   window.watsonAssistantChatOptions = {
+     integrationID: "22bd3965-03a6-43f2-ab2b-35d2955fe380", // The ID of this integration.
+     region: "au-syd", // The region your integration is hosted in.
+     serviceInstanceID: "59c60926-737c-406d-a59b-95352eb9b9f2", // The ID of your service instance.
+     onLoad: async (instance) => { await instance.render(); }
+   };
+   setTimeout(function(){
+     const t=document.createElement('script');
+     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+     document.head.appendChild(t);
+   });
+ </script>  
+</body>
+</html>
